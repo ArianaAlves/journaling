@@ -1,0 +1,64 @@
+/* CSS Variables para cores*/
+:root {
+    --text-color: #2c3e50;
+    --background-color: #ffffff;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #1a1a1a;
+        --background-color: #ffffff;
+    }
+}
+
+/* Reset e configurações básicas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens filhos */
+  min-height: 100vh;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  width: 90%; /* Ou um valor fixo como 800px */
+  max-width: 800px; /* main agora conterá os articles */
+}
+.cartao {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: inset;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: larger;
+}
+h2{
+  text-align: left;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: medium;
+}
+button{
+  background-color: var(--background-color);
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow:  0 4px 10px #7e7e7e;
+  font-style: italic;
+}
