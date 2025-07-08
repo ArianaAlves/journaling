@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Diário Pessoal</title>
+    <title>Meu Diário de Programação</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 <body>
     
     <header>
-        <h1>Meu Diário</h1><br>
+        <h1>Meu Diário de Programação</h1><br>
     </header>
     <main>
         <article class="cartao">
@@ -21,8 +21,10 @@
                 <p><time datetime="2025-06-30">30 de Junho de 2025</time></p>
             </header>
             <p>Hoje consegui terminar a aula de HTML e CSS aprofundado. Criei layouts com Flexbox e Grid, foi desafiador mas gradificante!</p>
-            <p>Também experimentei usar Google Fonts para deixar a página mais estilosa.</p>
-            <button>Aprendendo...</button><br>
+            <p>Também experimentei usar Google Fonts para deixar a página mais estilosa.</p><br>
+            <div class="button-conteiner">
+                <button class="button">Aprendendo...</button><br>
+            </div>
             
         </article>
         <article class="cartao">
@@ -30,12 +32,22 @@
                 <h2>Pensamentos sobre Javascript</h2><br>
                 <p><time datetime="2025-04-11">11 de Abril de 2025</time></p>
             </header>
-            <p>Ansiosa para começar a aprender Javascript nas próximas semanas. Parece que vai abrir muitas possibilidades para interatividade.</p>
-            <button>Entusiasmada!</button><br>
+            <p>Ansiosa para começar a aprender Javascript nas próximas semanas. Parece que vai abrir muitas possibilidades para interatividade.</p><br>    
+           
+            <div class="button-conteiner">
+                <button class="button">Entusiasmada!</button><br>
+            </div>
         </article>
+        <div id="social-links">
+            <a href="https://github.com/ArianaAlves" target="_blank"
+                ><ion-icon name="logo-github"></ion-icon></a>
+                
+                <a href="https://linkedin.com/in/arianavelascoalves" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a><br>
+        </div>
+
     </main>
     <footer>
-        <p>&copy; 2025 Meu Diário Pessoal.</p>
+        <p>&copy; 2025 Meu Diário de Programação.</p>
     </footer>
 </body>
 </html>

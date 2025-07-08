@@ -1,14 +1,16 @@
 /* CSS Variables para cores*/
 :root {
     --text-color: #2c3e50;
-    --background-color: #ffffff;
+    --background-color: #ffffffd5;
+    --item-color: #2bbebe9d;
 }
 
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     :root {
         --text-color: #1a1a1a;
-        --background-color: #ffffff;
+        --background-color: #ffffffd5;
+        --item-color: #27b4b4b6;
     }
 }
 
@@ -25,9 +27,12 @@ body {
   flex-direction: column;
   align-items: center; /* Centraliza os itens filhos */
   min-height: 100vh;
+  max-width: 100vw;
   color: var(--text-color);
   background-color: var(--background-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+  background-image: url("stitch.png");
+  background-size: cover;
 }
 
 main {
@@ -38,7 +43,8 @@ main {
   background-color: var(--background-color);
   border-radius: 10px;
   padding: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(50, 38, 223, 0.658);
+  margin-bottom: 2rem;
 }
 h1{
   background-color: var(--background-color);
@@ -48,6 +54,7 @@ h1{
   font-weight: bolder;
   font-style: italic;
   font-size: larger;
+  margin: 0.8rem;
 }
 h2{
   text-align: left;
@@ -55,10 +62,51 @@ h2{
   font-style: italic;
   font-size: medium;
 }
-button{
-  background-color: var(--background-color);
-  border-radius: 5px;
+.button-conteiner{
+  display: flex;
+  justify-content: flex-end;
+}
+.button{
+  background-color: rgba(0, 174, 255, 0.137);
+  border-radius: 6px;
   padding: 0.5rem;
-  box-shadow:  0 4px 10px #7e7e7e;
-  font-style: italic;
+  font-family: cursive;
+  box-shadow: 0 4px 10px rgba(50, 38, 223, 0.658);
+
+}
+.button:hover{
+  background-color: rgba(0, 38, 255, 0.637);
+  cursor: pointer;
+}
+
+#social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(logo-linkedin.png);
+}
+
+#social-links ion-icon {
+  width: 32px;
+  height: 32px;
+}
+
+#social-links a {
+  color: var(--item-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: 0.2s;
+  border-radius: 50%;
+  background-image: url(logo-github.png);
+}
+
+
+
+footer{
+  text-align: center;
+  margin: 30px;
 }
