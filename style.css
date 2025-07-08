@@ -2,7 +2,7 @@
 :root {
     --text-color: #2c3e50;
     --background-color: #ffffffd5;
-    --item-color: #2bbebe9d;
+    --item-color: #27b4b4c9;
 }
 
 /* Dark mode support */
@@ -10,7 +10,7 @@
     :root {
         --text-color: #1a1a1a;
         --background-color: #ffffffd5;
-        --item-color: #27b4b4b6;
+        --item-color: #23cfcfc9;
     }
 }
 
@@ -92,7 +92,6 @@ p{
   gap: 16px;
   align-items: center;
   justify-content: center;
-  background-image: url(logo-linkedin.png);
 }
 
 #social-links ion-icon {
@@ -108,7 +107,6 @@ p{
   padding: 10px;
   transition: 0.2s;
   border-radius: 50%;
-  background-image: url(logo-github.png);
 }
 
 
