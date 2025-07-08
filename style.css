@@ -60,6 +60,13 @@ h2{
   text-align: left;
   font-weight: bolder;
   font-style: italic;
+  font-size: large;
+}
+p time{
+  text-align: justify;
+  font-size: small;
+}
+p{
   font-size: medium;
 }
 .button-conteiner{
